@@ -1,0 +1,197 @@
+@charset "UTF-8" ;
+
+@font-face { /*Quando fonte local usar font-face */
+    font-family: "idroid" ;
+    src: url(fontes/idroid.otf);
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: #66CC99;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image:linear-gradient( to bottom, #42e48b, rgba(0, 0, 0, 0.692)); /*background-image ou só Background pra gradient */
+    margin: 0;
+    border: 0;
+    padding: 20px;
+    min-width: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bebas Neue' , sans-serif;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.267);
+}
+
+strong {
+    color: rgb(0, 61, 0);
+    font-weight: bold;
+}
+
+.primeirop {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.267);
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+nav a:hover {
+    background-color: #247549; /*Retangulo de fundo*/
+    transition-duration: 0.5s; /* Slow motion ao passar o mouse(opcional)*/
+    padding: 8px;
+    border-radius: 5px;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+main {
+    background-color: white;
+    min-width: 300; /*Largura mínima(320px para celulares antigos */
+    max-width: 1000px; /*Largura Máxima(800px para TV'S por exemplo) */
+    margin: auto ; /*Centraliza e automatiza as bordas */
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425) ;
+}
+
+#h2historia {
+    color: rgb(0, 61, 0);
+    font-family: "idroid" , "sans-serif";
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+h3 {
+    color: rgb(0, 61, 0);
+    font-family: "idroid" , "sans-serif";
+    background:linear-gradient( to right, #42e48bd3, transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 0px 2px 0px 2px;
+    line-height: 2em;
+}
+
+#dan {
+    color: rgb(0, 61, 0);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #66CC99;
+    padding: 2px 6px;
+}
+
+#dan:hover {
+    text-decoration: underline;
+}
+
+#dan::after {
+    content: '🔗' ;
+    padding-left: 5px;
+}
+
+#dan2 {
+    color: rgb(0, 61, 0);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 6px;
+}
+
+#dan2::after {
+    content: '🔗' ;
+    padding-left: 5px;
+}
+#dan2:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin: auto; /*centraliza a imagem*/
+    max-width: 100%; /*Não deixa vazar do main */
+    height: auto; /*mantém a proporção */
+    display: block;
+}
+
+div.video {
+    background-color: #247549;
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+h4 {
+    color: white;
+    background-color: #247549;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+ul {
+    list-style-position: inside;
+    columns: 2;
+    padding-left: 100px;
+    list-style-type: '✔️\00A0\00A0';
+}
+
+aside {
+    background-color: #42e48b;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+.pfinal {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px ;
+    padding-left: 10px;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(0, 61, 0);
+    text-align: center;
+    padding: 10px;
+}
+
+.destaque2 {
+    font-weight: bold;
+}
+
+#github {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+#github:hover {
+    text-decoration: underline;
+}
